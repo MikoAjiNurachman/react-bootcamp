@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px 20px 20px 20px;
+}
+
+.columns {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;  
+}
+.columns-1 {
+    grid-column: 1 span;
+}
+.columns-2 {
+    grid-column: 2 span;
+}
+.columns-3 {
+    grid-column: 3 span;
+}
+.columns-4 {
+    grid-column: 4 span;
+}
+.columns-5 {
+    grid-column: 5 span;
+}
+.columns-6 {
+    grid-column: 6 span;
+}
+.columns-7 {
+    grid-column: 7 span;
+}
+.columns-8 {
+    grid-column: 8 span;
+}
+.columns-9 {
+    grid-column: 9 span;
+}
+.columns-10 {
+    grid-column: 10 span;
+}
+.columns-11 {
+    grid-column: 11 span;
+}
+.columns-12 {
+    grid-column: 12 span;
+}
+
+.header {
+    padding: 10px;
+    background-color: #264d99;
+    display: flex;
+    justify-content: space-between;
+}
+.label-header {
+    display: block;
+    color: azure;
+}
+.input-form-header{
+    outline: none;
+    border: none;
+    padding: 2px 2px 2px 2px;
+    border-radius: 2px;
+}
+.facebook-text {
+    margin-top: 15px;
+    margin-left: 30px;
+    color: azure;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.btn-login {
+    background-color: #264d99;
+    margin-top: 18px;
+    color: azure;
+    padding: 2px 2px 2px 2px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.menu-bar {
+    background-color: aqua;
+    height: 100%;
+    
+    margin: 20px 20px 20px 20px;
+}

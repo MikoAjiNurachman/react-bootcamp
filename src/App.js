@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import {Header, Menu, Footer} from './partials/'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+        statusLogin: false,
+        setButton: false
+    }
+  }
+  login = (page) => {
+    this.setState({ statusLogin: page })
+  }
+  button = (status) => {
+    this.setState({ setButton: status })
+  }
+  render() {
+    let page = null
+    if (this.state.statusLogin === true) {
+      page = <Menu login={this.login} button={this.state.setButton}/>
+    }
+    else {
+      page = "Kosong"
+    }    
+    return(
+      <div>
+        <Header login={this.login} button={this.button}/>
+        <div className="container">
+            {page}
+        </div>
+        {/* <Footer/>  */}
+      </div>
+    )
+  }
 }
 
 export default App;
