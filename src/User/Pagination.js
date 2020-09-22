@@ -44,7 +44,7 @@ export default function Pagination({ setPagination }) {
         </option>
       );
       setComponents((prevCom) => {
-        return [...prevCom], arr;
+        return ([...prevCom],arr);
       });
     }
   };
